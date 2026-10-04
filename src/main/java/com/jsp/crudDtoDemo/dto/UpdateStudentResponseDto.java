@@ -1,0 +1,96 @@
+package com.jsp.crudDtoDemo.dto;
+
+import java.time.LocalDateTime;
+
+public class UpdateStudentResponseDto {
+
+    private Long id;
+    private String name;
+    private int age;
+    private String email;
+    private int rollNo;
+    private String subject;
+    private LocalDateTime updatedAt;
+
+
+    public UpdateStudentResponseDto(
+            Long id,
+            String name,
+            int age,
+            String email,
+            int rollNo,
+            String subject,
+            LocalDateTime updatedAt) {
+
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this.rollNo = rollNo;
+        this.subject = subject;
+        this.updatedAt = updatedAt;
+    }
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
+
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+}
